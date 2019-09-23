@@ -11,15 +11,12 @@
 |
 */
 
-
-use Illuminate\Support\Facades\Route;
-
 Route::get('/', function () {
     return view('welcome');
 });
 
+Route :: get('/refresh_captcha','Auth\registerController@refreshCaptcha')->name('refresh');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/refresh_captcha', 'Auth\RegisterController@refreshCaptcha')->name('refresh_captcha');

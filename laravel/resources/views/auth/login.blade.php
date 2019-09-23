@@ -24,14 +24,6 @@
                                 @enderror
                             </div>
                         </div>
-                         <div class="form-group row">
-                            <label for="Contact" class="col-md-4 col-form-label text-md-right">{{ __('Contact') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="contact" type="contact" class="form-control @error('contact') is-invalid @enderror" name="contact" value="{{ old('contact') }}" required autocomplete="email">
-
-                            </div>
-                        </div>
 
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
